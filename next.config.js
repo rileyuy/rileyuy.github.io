@@ -4,7 +4,9 @@ const nextConfig = {
   images:{
     loader: "akamai",
     path: "",
-  }
+  },
+  basePath:"/rileyuy.github.io",
+  assetPrefix:"/rileyuy.github.io"
 }
 
 module.exports = nextConfig
