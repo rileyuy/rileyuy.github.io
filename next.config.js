@@ -2,11 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images:{
-    loader: "akamai",
-    path: "/rileyuy.github.io",
+    loader: "imgix"
   },
   basePath:"/rileyuy.github.io",
-  assetPrefix:"/rileyuy.github.io"
+  assetPrefix:"/rileyuy.github.io",
+  reactStrictMode: true,
 }
 
 module.exports = nextConfig
