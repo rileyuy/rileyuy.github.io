@@ -32,9 +32,9 @@ export default function Home() {
           <p className="font-lato text-4xl text-white">Aspiring developer and UX designer.</p> */}
           <div className="pb-8">
             <p className="font-lato font-bold text-4xl text-white">
-              <span className="text-home_blue">Hello, I'm Riley. </span>
+              <span className="text-home_blue">Hello, I&quot;m Riley. </span>
               
-              <br/><br/>I'm a 3rd year student taking Bachelor of
+              <br/><br/>I&quot;m a 3rd year student taking Bachelor of
               Science in Computer Science in De La Salle University. 
               
               <br/><br/>Aspiring developer and UX designer.
