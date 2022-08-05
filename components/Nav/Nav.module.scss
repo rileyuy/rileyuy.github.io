@@ -19,6 +19,9 @@
     padding: 0;
     position: relative;
     transition: ease all 0.3s;
+    font-size: x-large;
+    font-family: "lato";
+    font-weight: 400;
 
     &::after {
         content: "";

@@ -3,26 +3,35 @@ import styles from "./Nav.module.scss";
 
 export const Nav = () => {
     return (
-        <nav className="min-h-[48px] py-4 relative w-full z-50 bg-black">
-            <div className="flex flex-row justify-between items-center h-full container mx-auto px-1">
-                <h1 className="text-2xl md:text-3xl font-goldleaf text-white">
+        <nav className="min-h-[48px] py-4 absolute w-full z-50 bg-dark">
+            <div className="flex flex-row justify-between items-center h-full container mx-auto md:px-24 px-16 lg:px-32">
+                <h1 className="text-2xl md:text-3xl font-bondjlo text-white">
                     <Link href="/">
                         <a className="">
-                            historia
+                            riley uy
 
                         </a>
                     </Link>
                 </h1>
-                <div className="flex flex-row space-x-4 md:space-x-8 text-xs md:text-base">
+                <div className="md:block hidden flex flex-row space-x-4 md:space-x-8 text-xs md:text-base">
                     <div className={`${styles.navItem}`}>
-                        <Link href="/">
-                            <a className="nav-item text-white opacity-80 hover:opacity-100">Overview</a>
+                        <Link href="/about">
+                            <a className="nav-item text-white opacity-80 hover:opacity-100">About</a>
+                        </Link>
+                    </div>
+
+                    <div className={`${styles.navItem}`}>
+                        <Link href="/blog">
+                            <a className="nav-item text-white opacity-80 hover:opacity-100">Blog</a>
+                        </Link>
+                    </div>
+
+                    <div className={`${styles.navItem}`}>
+                        <Link href="/contactme">
+                            <a className="nav-item text-white opacity-80 hover:opacity-100">Contact Me</a>
                         </Link>
                     </div>
                     
-                    <Link href="/aboutus">
-                        <a className="nav-item text-white opacity-80 hover:opacity-100">About</a>
-                    </Link>
                 </div>
             </div>
         </nav>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,12 +21,17 @@ a {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
+@font-face {
+  font-family: "goldleaf";
+  src: url("../public/fonts/GoldleafBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "kelvingi";
+  src: url("../public/fonts/kelvingi.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "bondjlo";
+  src: url("../public/fonts/bondjlo.ttf") format('truetype');
+}
