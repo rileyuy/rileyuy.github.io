@@ -7,13 +7,13 @@ export const Nav = () => {
             <div className="flex flex-row justify-between items-center h-full container mx-auto md:px-24 px-16 lg:px-32">
                 <h1 className="text-2xl md:text-3xl font-bondjlo text-white">
                     <Link href="/">
-                        <a className="">
+                        
                             riley uy
 
-                        </a>
+                        
                     </Link>
                 </h1>
-                <div className="md:block hidden flex flex-row space-x-4 md:space-x-8 text-xs md:text-base">
+                <div className="md:flex hidden flex-row space-x-4 md:space-x-8 text-xs md:text-base">
                     <div className={`${styles.navItem}`}>
                         <Link href="/about">
                             <a className="nav-item text-white opacity-80 hover:opacity-100">About</a>
