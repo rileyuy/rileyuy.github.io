@@ -6,7 +6,7 @@ export const Nav = () => {
         <nav className="min-h-[48px] py-4 absolute w-full z-50 bg-dark">
             <div className="flex flex-row justify-between items-center h-full container mx-auto md:px-24 px-16 lg:px-32">
                 <h1 className="text-2xl md:text-3xl font-bondjlo text-white">
-                    <Link href="/">
+                    <Link href="/" className="font-bondjlo">
                         
                             riley uy
 
