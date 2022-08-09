@@ -65,6 +65,7 @@ export default function Home() {
             <a
               className=" h-full flex items-center justify-center"
               target="_blank"
+              rel="noreferrer" 
               href="https://drive.google.com/file/d/1Zxd7VdXUWcLHdPOxO7o01ofCCj1cqBe4/view?usp=sharing"
             >
               <button className="bg-button_dark text-white rounded-lg h-14 lg:h-full px-6 font-lato  text-3xl font-bold">
