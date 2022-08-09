@@ -4,8 +4,8 @@ import styles from "./Nav.module.scss";
 export const Nav = () => {
   return (
     <nav className="min-h-[48px] py-4 absolute w-full z-50 bg-dark">
-      <div className="flex flex-row justify-between items-center h-full container mx-auto md:px-24 px-16 lg:px-32">
-        <h1 className="text-2xl md:text-3xl font-bondjlo text-white">
+      <div className="flex flex-row justify-between items-center h-full container mx-auto md:px-24 px-8 lg:px-32">
+        <h1 className={`${styles.title} text-3xl md:text-4xl  text-white`}>
           riley uy
         </h1>
         <div className="md:flex hidden flex-row space-x-4 md:space-x-8 text-xs md:text-base">
