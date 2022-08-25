@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Layout } from "../components/Layout/Layout";
+import { OrgItem } from "../components/OrgItem/OrgItem";
 import { FaGithubSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/r-alt.png" />
       </Head>
       <section className="w-full h-fit lg:h-screen justify-between relative flex flex-col lg:flex-row bg-dark px-8 md:px-32 py-16 items-center">
-        <div className="lg:w-1/2 w-full h-full flex flex-col justify-center mx-auto lg:mr-24 lg:mt-0 my-4 md:my-8 lg:my-12 px-12 lg:px-0">
+        <div className="lg:w-1/2 w-full h-full flex flex-col justify-center mx-auto lg:mr-24 lg:my-0 my-4 md:my-8  px-12 lg:px-0">
           <div className="rounded-full overflow-hidden drop-shadow-xl bg-white">
             <Image
               layout="responsive"
@@ -65,7 +66,7 @@ export default function Home() {
             <a
               className=" h-full flex items-center justify-center"
               target="_blank"
-              rel="noreferrer" 
+              rel="noreferrer"
               href="https://drive.google.com/file/d/1Zxd7VdXUWcLHdPOxO7o01ofCCj1cqBe4/view?usp=sharing"
             >
               <button className="bg-button_dark text-white rounded-lg h-14 lg:h-full px-6 font-lato  text-3xl font-bold">
@@ -77,7 +78,9 @@ export default function Home() {
       </section>
       <section className="w-full h-fit justify-center relative flex flex-col items-center bg-dark py-16 px-8 md:px-32">
         <div className=" w-full h-full flex justify-center flex-col items-center lg:pb-6 pb-12">
-          <h1 className="text-4xl lg:text-6xl font-extrabold  font-lato pb-4 lg:pb-12">about me</h1>
+          <h1 className="text-4xl lg:text-6xl font-extrabold  font-lato pb-4 lg:pb-12">
+            about me
+          </h1>
           <p className="text-xl lg:text-3xl font-lato text-center">
             Hello, my name is Riley. I&rsquo;m a 3rd year student taking my
             degree in Computer Science in De La Salle University-Manila. Ever
@@ -110,15 +113,31 @@ export default function Home() {
             <p className="text-xl font-lato ">
               🖊️ UX Design
               <br />
-              🌐 Web development 
+              🌐 Web development
               <br />
-              🎮 Gaming 
+              🎮 Gaming
               <br />
-              🏸 Badminton 
+              🏸 Badminton
               <br />
-              🎥 Video editing 
+              🎥 Video editing
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="w-full h-fit justify-center relative flex flex-col items-center bg-dark py-16 px-8 md:px-32">
+        <div className="w-96">
+          <h1 className="text-4xl lg:text-6xl font-extrabold text-center font-lato pb-4 lg:pb-12">
+            organizations & affiliations
+          </h1>
+        </div>
+        <div className="flex flex-row justify-between w-full h-fit overflow-auto">
+          <OrgItem title="User Experience Society - DLSU" imageName="uxsoc.png"/>
+          <OrgItem title="UXPH" imageName="uxsoc.png"/>
+          <OrgItem title="" imageName=""/>
+          <OrgItem title="" imageName=""/>
+          <OrgItem title="" imageName=""/>
+
         </div>
       </section>
     </Layout>
