@@ -14,7 +14,7 @@
 }
 
 .title{
-    font-family:  'Oleo Script Swash Caps', cursive;
+    font-family:  'Ubuntu', sans-serif;
 }
 
 .navItem {
@@ -24,7 +24,7 @@
     position: relative;
     transition: ease all 0.3s;
     font-size: x-large;
-    font-family: "lato";
+    font-family: "lato", sans-serif;
     font-weight: 400;
 
     &::after {
