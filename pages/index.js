@@ -1,13 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Layout } from "../components/Layout/Layout";
-import { OrgItem } from "../components/OrgItem/OrgItem";
+import { Layout } from "../src/components/Layout/Layout";
+import { OrgItem } from "../src/components/OrgItem/OrgItem";
 import { FaGithubSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { useState } from "react";
+import orgList from "../src/data/orgs.json";
 
 export default function Home() {
   const resumeURL = "./public/downloadables/Resume.pdf";
   const resumeName = "Resume.pdf";
+
+  const [orgs, setOrgs] = useState(orgList);
 
   return (
     <Layout>
@@ -131,13 +135,10 @@ export default function Home() {
             organizations & affiliations
           </h1>
         </div>
-        <div className="flex flex-row justify-between w-full h-fit overflow-auto">
-          <OrgItem title="User Experience Society - DLSU" imageName="uxsoc.png"/>
-          <OrgItem title="UXPH" imageName="uxsoc.png"/>
-          <OrgItem title="" imageName=""/>
-          <OrgItem title="" imageName=""/>
-          <OrgItem title="" imageName=""/>
-
+        <div className="flex flex-row justify-evenly w-full h-auto flex-wrap">
+          {orgs.map((item, index) => {
+            return <OrgItem item={item} key={index} />;
+          })}
         </div>
       </section>
     </Layout>

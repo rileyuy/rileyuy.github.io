@@ -5,8 +5,8 @@ import { FaTemperatureHigh } from "react-icons/fa";
 
 export const OrgItem = ({ item }) => {
   return (
-    <div className="flex flex-col w-32 h-auto mx-4">
-      <div className="h-64">
+    <div className="flex flex-col w-64 h-auto mx-4 pb-4">
+      <div className="">
         <div className="rounded-full overflow-hidden drop-shadow-xl mb-4">
           <Image
             layout="responsive"
@@ -15,7 +15,6 @@ export const OrgItem = ({ item }) => {
             width={150}
             height={150}
           />
-          {/* "riley-transparent-cropped.png" */}
         </div>
       </div>
       <div className="w-full">
