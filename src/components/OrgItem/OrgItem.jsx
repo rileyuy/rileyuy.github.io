@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from "./OrgItem.module.scss";
 import Image from "next/image";
-import { FaTemperatureHigh } from "react-icons/fa";
 
 export const OrgItem = ({ item }) => {
   return (
