@@ -10,7 +10,7 @@ export const Nav = () => {
         </h1>
         <div className="md:flex hidden flex-row space-x-4 md:space-x-8 text-xs md:text-base">
           <div className={`${styles.navItem}`}>
-            <Link href="/about">
+            <Link href="/">
               <a className="nav-item text-white opacity-80 hover:opacity-100">
                 About
               </a>
@@ -26,7 +26,7 @@ export const Nav = () => {
           </div>
 
           <div className={`${styles.navItem}`}>
-            <Link href="/contactme">
+            <Link href="/contact">
               <a className="nav-item text-white opacity-80 hover:opacity-100">
                 Contact Me
               </a>
