@@ -42,7 +42,7 @@ export default function Home() {
           <p className="font-lato text-4xl ">Aspiring developer and UX designer.</p> */}
           <div className="mb-8">
             <p className="font-lato  text-xl md:text-3xl ">
-              <span className="text-home_blue font-bold">
+              <span className="text-home_blue font-bold text-4xl">
                 Hello, I&rsquo;m Riley.{" "}
               </span>
               <br />
@@ -56,16 +56,16 @@ export default function Home() {
           </div>
           <div className="flex flex-col lg:flex-row items-center h-full md:h-12 w-full lg:justify-start ">
             <div className="flex flex-row lg:mr-8 justify-between md:justify-evenly lg:justify-start lg:w-fit w-full lg:mx-0 md:mb-0 mb-8 lg:px-0 px-16 lg:pb-0 pb-4">
-              <a href="https://www.linkedin.com/in/riley-uy/">
-                <FaLinkedin className="w-14 h-full cursor-pointer text-button_dark lg:mr-4" />
+              <a href="https://www.linkedin.com/in/riley-uy/" target="_blank">
+                <FaLinkedin className="w-14 h-full cursor-pointer text-button_dark hover:text-button_hover_dark lg:mr-4 transition-text ease-in-out duration-300" />
               </a>
 
-              <a href="https://github.com/rileyuy">
-                <FaGithubSquare className="w-14 h-full cursor-pointer text-button_dark lg:mr-4" />
+              <a href="https://github.com/rileyuy" target="_blank">
+                <FaGithubSquare className="w-14 h-full cursor-pointer text-button_dark hover:text-button_hover_dark lg:mr-4 transition-text ease-in-out duration-300" />
               </a>
 
-              <a href="https://www.facebook.com/rileyuyy/">
-                <FaFacebookSquare className="w-14 h-full cursor-pointer text-button_dark lg:mr-4" />
+              <a href="https://www.facebook.com/rileyuyy/" target="_blank">
+                <FaFacebookSquare className="w-14 h-full cursor-pointer text-button_dark hover:text-button_hover_dark lg:mr-4 transition-text ease-in-out duration-300" />
               </a>
             </div>
 
@@ -75,7 +75,7 @@ export default function Home() {
               rel="noreferrer"
               href="https://drive.google.com/file/d/1Zxd7VdXUWcLHdPOxO7o01ofCCj1cqBe4/view?usp=sharing"
             >
-              <button className="bg-button_dark text-white rounded-lg h-14 md:h-full px-6 font-lato w-full md:text-3xl text-2xl font-bold">
+              <button className="bg-button_dark  hover:bg-button_hover_dark text-white rounded-lg h-14 md:h-full px-6 font-lato w-full md:text-3xl text-2xl font-bold transition-color ease-in-out duration-200">
                 Download CV
               </button>
             </a>
@@ -88,7 +88,7 @@ export default function Home() {
             about me
           </h1>
           <p className="text-xl lg:text-3xl font-lato text-center pb-8">
-            Hello, my name is Riley. I&rsquo;m a 4th year student taking my
+            I&rsquo;m a 4th year student taking my
             degree in Computer Science in De La Salle University-Manila. Ever
             since high school I&rsquo;ve been intrigued about the impact of
             programming and how powerful it can be for the future. That same

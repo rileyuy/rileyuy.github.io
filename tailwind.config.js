@@ -14,7 +14,9 @@ module.exports = {
   
         colors:{
           'dark': '#191B1F',
-          'button_dark': '#5A647E',
+          'dark_old': '#191B1F',
+          'button_dark': '#616E7C',
+          'button_hover_dark': '#313749',
           'home_blue' : '#8E92FF',
         },
       },
