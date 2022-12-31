@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Blog.module.scss";
 import { Layout } from "../src/components/Layout/Layout";
-import { useState } from "react";
 import { BlogItem } from "../src/components/BlogItem/BlogItem";
 
 export default function Blog() {

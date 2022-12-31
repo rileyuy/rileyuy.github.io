@@ -13,8 +13,39 @@
     }
 }
 
-.title{
-    font-family:  'Ubuntu', sans-serif;
+.title {
+    font-family: 'Ubuntu', sans-serif;
+
+
+    span:before {
+        content: '';
+        animation: animate infinite 17s;
+
+    }
+
+    @keyframes animate {
+        0% {
+            content: 'rileyuy';
+            opacity: 1;
+
+        }
+        15%{
+            opacity: 0;
+        }
+        50%{
+            content: '江丰田';
+            opacity: 1;
+
+        }
+        65%{
+            opacity: 0;
+        }
+        100%{
+            content: 'rileyuy';
+            opacity: 1;
+        }
+    }
+
 }
 
 .navItem {
@@ -40,6 +71,7 @@
 
     &:hover {
         cursor: pointer;
+
         .subNav {
             transform: scale(1);
             opacity: 1;
