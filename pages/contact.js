@@ -12,8 +12,8 @@ export default function Contact() {
         <title>{"Contact Me"}</title>
         <link rel="icon" href="/r-alt.png" />
       </Head>
-      <section className="w-full h-fit justify-center relative flex flex-col items-center bg-dark py-16 px-8 md:px-32">
-        {/* <div className=" w-full h-full flex justify-center flex-col items-center lg:pb-6 pb-12">
+     {/* <section className="w-full h-fit justify-center relative flex flex-col items-center bg-dark py-16 px-8 md:px-32">
+         <div className=" w-full h-full flex justify-center flex-col items-center lg:pb-6 pb-12">
           <h1 className="text-4xl lg:text-6xl font-extrabold  font-lato pb-4 lg:pb-12">
             blog
           </h1>
@@ -58,8 +58,13 @@ export default function Contact() {
               🎥 Video editing
             </p>
           </div>
-        </div> */}
-      </section>
+        </div> 
+      </section>*/}
+      <div className="w-screen h-screen bg-black flex items-center justify-center">
+        <p className="text-white text-center text-xl lg:text-3xl px-4 lg:px-6">
+          ⚠️ This website is under construction. ⚠️
+        </p>
+      </div>
     </Layout>
   );
 }

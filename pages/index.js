@@ -17,7 +17,17 @@ export default function Home() {
   };
   return (
     <Layout>
-      <Head>
+      <div className="w-screen h-screen bg-black flex items-center justify-center">
+        <p className="text-white text-center text-xl lg:text-3xl px-4 lg:px-6">
+          ⚠️ This website is under construction. ⚠️
+        </p>
+      </div>
+    </Layout>
+  );
+}
+
+{
+  /* <Head>
         <title>{"Home"}</title>
         <link rel="icon" href="/r-alt.png" />
       </Head>
@@ -39,7 +49,7 @@ export default function Home() {
             I'm a 3rd year student taking Bachelor of Science in Computer
             Science in De La Salle University.
           </p>
-          <p className="font-lato text-4xl ">Aspiring developer and UX designer.</p> */}
+          <p className="font-lato text-4xl ">Aspiring developer and UX designer.</p> 
           <div className="mb-8">
             <p className="font-lato  text-xl md:text-3xl ">
               <span className="text-home_blue font-bold text-4xl">
@@ -139,7 +149,5 @@ export default function Home() {
             return <OrgItem item={item} key={index} />;
           })}
         </div>
-      </section>
-    </Layout>
-  );
+      </section> */
 }
