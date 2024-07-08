@@ -1,46 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans+SC:wght@500&family=Oleo+Script+Swash+Caps:wght@400;700&family=Ubuntu:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --navbar-height: 91px; /* Define your navbar height here */
+}
 
-html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Public Sans", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: white
+main {
+  padding-top: calc(var(--navbar-height) + 16px);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-//px-8 md:px-32 py-16
-section.section-margins {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
-    padding-left: 8rem !important;
-    padding-right: 8rem !important;
-
-  @media only screen and (max-width: 768px) {
-    padding-top: 4rem !important;
-    padding-bottom: 2rem !important;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-
-  }
+section {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }

@@ -1,5 +1,4 @@
 {
-  "homepage": "https://rileyuy.github.io/rileyuy.github.io",
   "name": "rileyuy.github.io",
   "version": "0.1.0",
   "private": true,
@@ -7,23 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
-    "googleapis": "^105.0.0",
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
-    "react-use-downloader": "^1.1.7",
-    "sass": "^1.54.0"
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "sass": "^1.77.6"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.8",
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.7"
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
