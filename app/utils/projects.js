@@ -1,23 +1,32 @@
 export const projects = [
   {
-    title: "DLSU University Student Government",
-    link: "https://dlsuusg.com/",
-    filename: "uxsoc-taft.png",
+    title: "DLSU USG",
+    description:
+      "Part of the web design team for the University Student Government Website.",
+    fileName: "dlsuusg.png",
+  },
+  {
+    title: "UXSOC Taft",
+    description:
+      "Part of the web design team for the University Student Government Website.",
+    fileName: "uxsoc.png",
   },
   {
     title: "V-Malaysia 2022",
-    link: "https://the-v.net/vmalaysia2022",
-    filename: "vmalaysia2022.png",
+    description:
+      "Part of the web design team for the University Student Government Website.",
+    fileName: "vmalaysia2022.png",
   },
-  {
-    title: "User Experience Society - DLSU Chapter",
-    link: "https://dlsu.uxsociety.org/",
-    filename: "dlsu-usg.png",
-  },
-
   {
     title: "V-Malaysia 2023",
-    link: "https://the-v.net/vmalaysia2023",
-    filename: "vmalaysia2023.png",
+    description:
+      "Part of the web design team for the University Student Government Website.",
+    fileName: "vmalaysia2023.png",
+  },
+  {
+    title: "Parak Clothing",
+    description:
+      "Part of the web design team for the University Student Government Website.",
+    fileName: "parakclothing.png",
   },
 ];
