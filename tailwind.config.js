@@ -19,10 +19,12 @@ module.exports = {
       "extra-black": "1000",
       black: "900",
     },
-    colors: {
-      primary: "#5CB0FF",
-    },
     extend: {
+      colors: {
+        primary: "#5CB0FF",
+        "hero-green": "#C8FFEC",
+        "hero-yellow": "#FAFFE4",
+      },
       fontFamily: {
         sans: ["Public Sans", "sans-serif"],
         lato: ["Lato", "sans-serif"],
