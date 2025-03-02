@@ -21,37 +21,41 @@ export default function Home() {
   return (
     <main className="flex-grow relative h-auto">
       <section className="">
-        <div className="px-32 flex flex-row justify-center">
-          <div className="w-3/5 pr-8">
-            <h1 className="text-6xl pb-8">
-              Im{" "}
-              <span className="font-extrabold underline underline-offset-[10px]">
-                Riley.
-              </span>
-            </h1>
-            <h1 className="text-6xl pb-8">
-              A <span className="font-black">full-stack developer</span> from
-              the Philippines.
-            </h1>
-            <p className="text-3xl pb-8 font-lato">
-              I have maintained and developed numerous client websites and
-              interfaces that deliver the company&apos;s services to thousands
-              of Filipinos nationwide.
-            </p>
+        <section className="lg:px-32 md:px-16 flex md:flex-row flex-col justify-center main-section">
+          <div className="md:w-3/5 md:pr-8 w-full">
+            <div>
+              <div className="md:text-6xl text-3xl">
+                <h1 className="md:pb-8 pb-3">
+                  I&apos;m{" "}
+                  <span className="font-extrabold underline underline-offset-[10px]">
+                    Riley.
+                  </span>
+                </h1>
+                <h1 className="md:pb-8 pb-3">
+                  A <span className="font-black">full-stack developer</span>{" "}
+                  from the Philippines.
+                </h1>
+              </div>
+              <p className="md:text-3xl text-xl pb-8 font-lato">
+                I have maintained and developed numerous client websites and
+                interfaces that helps deliver medical services to thousands of
+                Filipinos nationwide.
+              </p>
+            </div>
             <div className="font-extrabold flex flex-row items-center">
               <ContentActionButton type={"primary"}>
                 <p className="text-2xl pr-2">Download CV</p>
                 <IoMdDownload size={"26px"} />
               </ContentActionButton>
-              <ContentActionButton type={"primary"}>
+              {/* <ContentActionButton type={"primary"}>
                 <p className="text-2xl pr-2">Contact Me</p>
                 <GoArrowUpRight size={"30px"} className={"stroke-1"} />
-              </ContentActionButton>
+              </ContentActionButton> */}
             </div>
           </div>
-          <div className="w-2/5 h-max">
-            <ContentDiv customStyles="px-8 flex flex-col justify-center items-center">
-              <div className="w-80 h-[360px] border-4 rounded-md border-black m-6 relative overflow-hidden">
+          <div className="md:w-2/5 w-full h-max">
+            <ContentDiv customStyles="lg:px-8 flex flex-col justify-center  ">
+              <div className="w-full lg:w-80 h-[360px] border-4 rounded-md border-black m-6 relative overflow-hidden">
                 <Image
                   src={thatsme}
                   alt="Picture of the author"
@@ -62,7 +66,11 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-row items-center justify-between px-6 pb-4">
-                <ContentCircleButton>
+                <ContentCircleButton
+                  href={
+                    "https://open.spotify.com/playlist/4QwupsUbIqB6eW2ZSMj2sd?si=3cce75f2cc36459e"
+                  }
+                >
                   <div className="flex items-center justify-center w-6 h-6 m-3">
                     <FontAwesomeIcon icon={faPlay} />
                   </div>
@@ -85,11 +93,11 @@ export default function Home() {
               </div>
             </ContentDiv>
           </div>
-        </div>
-        <section className="py-8 h-fit" id="about-me">
+        </section>
+        <section className="py-8 h-fit main-section" id="about-me">
           <h1 className="text-6xl text-center pb-8 font-extrabold">About Me</h1>
           <ContentDiv>
-            <p className="p-16 text-3xl text-center font-lato">
+            <p className="md:p-16 p-4 md:text-3xl text-xl text-center font-lato">
               Hello, I&apos;m Riley. I&apos;m a graduate of De La Salle
               University with a degree in Computer Science. Ever since high
               school I&apos;ve been intrigued about the impact of programming
@@ -131,7 +139,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-8 h-fit">
+        <section className="py-8 h-fit main-section">
           <h1 className="text-6xl text-center pb-8 font-extrabold">
             Work Experience
           </h1>
@@ -160,7 +168,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-8 h-fit">
+        <section className="py-8 h-fit main-section">
           <h1 className="text-6xl text-center pb-8 font-extrabold">
             Projects I&apos;ve Worked On
           </h1>

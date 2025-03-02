@@ -24,11 +24,11 @@ export const Nav = () => {
           </Link>
         </div>
 
-        <div className={`${styles.navItem}`}>
+        {/* <div className={`${styles.navItem}`}>
           <Link legacyBehavior href="/contact">
             Contact Me
           </Link>
-        </div>
+        </div> */}
         <Switch isOn={value} handleToggle={() => setValue(!value)} />
       </div>
     </nav>

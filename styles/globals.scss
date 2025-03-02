@@ -19,9 +19,28 @@ main {
   padding-top: calc(var(--navbar-height) + 16px);
 }
 
-section {
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+section.main-section {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  section.main-section {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+/* Large screens (1024px and up) */
+@media (min-width: 1024px) {
+  section.main-section {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
