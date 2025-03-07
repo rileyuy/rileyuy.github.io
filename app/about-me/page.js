@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main>
-      <div className=" mx-auto lg: px-80 py-12 md:py-0 flex flex-col justify-center">
+      <div className=" mx-auto lg:px-80 md:px-16 py-12 md:py-0 flex flex-col justify-center">
         <h1 className="md:text-7xl text-4xl font-bold mb-8 text-black text-center">
           so a little about me...
         </h1>
@@ -19,28 +19,29 @@ export default function AboutPage() {
           <p className="text-justify">
             I’m a{" "}
             <span className="font-bold">fullstack developer & designer </span>
-            from the Philippines. I love building websites and software that has
+            from the Philippines. I love building websites and software that
+            have
             <span className="font-bold"> purpose and meaning.</span> It's my
             dream to build something one day and to see it grow into something
             that I would have never imagined.
             <br />
             <br />
-            I've been writing code ever since I was in senior highschool and it
-            was an unexpected skill I picked up through specialized classes in
-            our curriculum. This was surprising even to me since I hated every
-            other coding class I had prior which came in the form of coding an
-            Arduino robot. But ever since then, I chose to pursue coding as
-            something I wanted to learn and use in my future career which has
-            been very fun and fulfilling.
+            I've been writing code ever since I was in highschool and it was an
+            unexpected skill I picked up through specialized classes in our
+            curriculum. This was surprising even to me since I hated every other
+            coding class I had prior which came in the form of coding an Arduino
+            robot. But ever since then, I chose to pursue coding as something I
+            wanted to learn and use in my future career which has been very fun
+            and fulfilling.
             <br />
             <br />
             On my free time, I play a lot of sports like badminton, soccer and
-            bouldering, play videos games (currently loving Marvel Rivals) and I
-            try to do a bit of photography here and there.
+            bouldering. I also play videos games (currently loving Marvel
+            Rivals) and do a bit of photography here and there.
           </p>
         </div>
 
-        <div className="w-full flex items-center justify-center my-8 h-[500px]">
+        <div className="w-full flex items-center justify-center my-8 h-[500px] flex-col md:flex-row gap-4">
           <Image
             src={`/badminton.JPG`}
             width={350}
@@ -60,13 +61,15 @@ export default function AboutPage() {
 
         <div className="md:text-xl text-lg px-4 lg:px-0 w-full">
           <p className="text-justify">
-            Badminton has always been my favorite sports since elementary and
-            has been my go-to nowadays as I try to go and play every week. It's
-            become my outlet to have fun and meet with friends at the same time.
+            Badminton has always been my favorite sport since elementary and has
+            been my go-to sport nowadays since it's the most accessible sport
+            nowadays. It's become my outlet to have fun and meet with friends at
+            the same time and it's the reason why I try to go and play every
+            week.
           </p>
         </div>
 
-        <div className="w-full flex items-center justify-center my-8 h-[180px]">
+        <div className="w-full flex items-center justify-center my-8 h-1/2 md:h-[180px] flex-col md:flex-row gap-4">
           <Image
             src={`/pokemon.jpg`}
             width={350}

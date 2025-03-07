@@ -118,21 +118,27 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4">
               <Link
                 href="/"
-                className="text-lg font-medium cursor-pointer"
+                className={`text-lg cursor-pointer  ${
+                  pathname === "/" ? "font-bold" : "font-normal"
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about-me"
-                className="text-lg font-medium"
+                className={`text-lg ${
+                  pathname === "/about-me" ? "font-bold" : "font-normal"
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 About Me
               </Link>
               <Link
                 href="/projects"
-                className="text-lg font-medium"
+                className={`text-lg ${
+                  pathname === "/projects" ? "font-bold" : "font-normal"
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Projects
