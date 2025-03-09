@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection/Hero";
 import PhotoStack from "./components/PhotoStack/PhotoStack";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -15,9 +16,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="py-6 text-center text-sm text-black font-extrabold w-full flex items-center justify-center bg-transparent absolute bottom-0">
-        made with &lt;3 © 2025 Riley Uy
-      </footer>
+      <Footer />
     </main>
   );
 }

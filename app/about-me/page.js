@@ -1,23 +1,46 @@
+"use client";
 // import Navbar from "@/components/navbar";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import Footer from "../components/Footer/Footer";
+
 export default function AboutPage() {
   return (
     <main>
       <div className=" mx-auto lg:px-80 md:px-16 py-12 md:py-0 flex flex-col justify-center">
-        <h1 className="md:text-7xl text-4xl font-bold mb-8 text-black text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="md:text-7xl text-4xl font-bold mb-8 text-black text-center"
+        >
           so a little about me...
-        </h1>
-        <Image
-          src={`/riley_long.jpg`}
-          //   alt={`${project?.title} Icon`}
-          width={700}
-          height={100}
-          className="px-4 mb-8 self-center object-contain"
-          priority
-        />
-        <div className="md:text-xl text-lg px-4 lg:px-0 w-full">
+        </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2 }}
+          className="self-center"
+        >
+          <Image
+            src={`/riley_long.jpg`}
+            //   alt={`${project?.title} Icon`}
+            width={700}
+            height={100}
+            className="px-4 mb-8 object-contain"
+            priority
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="md:text-xl text-lg px-4 lg:px-0 w-full"
+        >
           <p className="text-justify">
-            I’m a{" "}
+            I'm a{" "}
             <span className="font-bold">fullstack developer & designer </span>
             from the Philippines. I love building websites and software that
             have
@@ -39,9 +62,14 @@ export default function AboutPage() {
             bouldering. I also play videos games (currently loving Marvel
             Rivals) and do a bit of photography here and there.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="w-full flex items-center justify-center my-8 h-[500px] flex-col md:flex-row gap-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="w-full flex items-center justify-center my-8 h-[500px] flex-col md:flex-row gap-4"
+        >
           <Image
             src={`/badminton.JPG`}
             width={350}
@@ -57,9 +85,14 @@ export default function AboutPage() {
             className="px-4 object-cover h-full"
             priority
           />
-        </div>
+        </motion.div>
 
-        <div className="md:text-xl text-lg px-4 lg:px-0 w-full">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+          className="md:text-xl text-lg px-4 lg:px-0 w-full"
+        >
           <p className="text-justify">
             Badminton has always been my favorite sport since elementary and has
             been my go-to sport nowadays since it's the most accessible sport
@@ -67,9 +100,14 @@ export default function AboutPage() {
             the same time and it's the reason why I try to go and play every
             week.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="w-full flex items-center justify-center my-8 h-1/2 md:h-[180px] flex-col md:flex-row gap-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+          className="w-full flex items-center justify-center my-8 h-1/2 md:h-[180px] flex-col md:flex-row gap-4"
+        >
           <Image
             src={`/pokemon.jpg`}
             width={350}
@@ -84,9 +122,14 @@ export default function AboutPage() {
             className="px-4 object-cover h-full"
             priority
           />
-        </div>
+        </motion.div>
 
-        <div className="md:text-xl text-lg px-4 lg:px-0 w-full">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2 }}
+          className="md:text-xl text-lg px-4 lg:px-0 w-full"
+        >
           <p className="text-justify">
             To name some of my favorite games, Pokemon is definitely one of my
             all-time favorites, specifically, the Pokemon Mystery Dungeon
@@ -98,12 +141,10 @@ export default function AboutPage() {
             perfect. If you're thinking of picking up a game, I highly suggest
             you give one of these games a try.
           </p>
-        </div>
+        </motion.div>
       </div>
 
-      <footer className="py-6 text-center text-sm text-black font-extrabold w-full flex items-center justify-center bg-transparent absolute bottom-0">
-        made with &lt;3 © 2025 Riley Uy | made using next.js and tailwind
-      </footer>
+      <Footer />
     </main>
   );
 }
