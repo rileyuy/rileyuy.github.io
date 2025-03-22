@@ -37,7 +37,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="md:text-xl text-lg px-4 lg:px-0 w-full"
+          className="md:text-xl text-lg px-4 lg:px-0 w-full "
         >
           <p className="text-justify">
             I'm a{" "}
@@ -68,7 +68,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="w-full flex items-center justify-center my-8 h-[500px] flex-col md:flex-row gap-4"
+          className="w-full flex items-center justify-center my-8 h-auto flex-col md:flex-row gap-4"
         >
           <Image
             src={`/badminton.JPG`}
@@ -106,7 +106,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1 }}
-          className="w-full flex items-center justify-center my-8 h-1/2 md:h-[180px] flex-col md:flex-row gap-4"
+          className="w-full flex items-center justify-center my-8 h-auto md:h-[180px] flex-col md:flex-row gap-4"
         >
           <Image
             src={`/pokemon.jpg`}
