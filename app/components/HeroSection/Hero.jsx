@@ -1,10 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-// import { Button } from "@/components/ui/button";
-// import { Download } from "lucide-react";
-// import { AiOutlineDownload } from "react-icons/ai";
-// import { AiOutlineDownload } from "react-icons/ai"; // Filled version
 import { IoMdDownload } from "react-icons/io";
 
 export default function HeroSection() {

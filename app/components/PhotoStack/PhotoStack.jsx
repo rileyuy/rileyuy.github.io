@@ -32,7 +32,6 @@ const photos = [
   },
 ];
 
-// Define positions for each card in the spread
 const basePositions = [
   { x: -120, y: -40, z: 1, rotate: -8, scale: 1.2 },
   { x: 30, y: -70, z: 0, rotate: 12, scale: 1.2 },
@@ -45,10 +44,8 @@ export default function PhotoStack() {
   const containerRef = useRef(null);
   const [cardPositions, setCardPositions] = useState(basePositions);
 
-  // Update positions based on screen size
   useEffect(() => {
     const handleResize = () => {
-      // Calculate scale factor based on screen width
       const scaleFactor =
         window.innerWidth < 640
           ? 0.7
@@ -58,32 +55,26 @@ export default function PhotoStack() {
           ? 0.85
           : 1;
 
-      // Adjust positions for different screen sizes
       const adjustedPositions = basePositions.map((pos) => {
         return {
           ...pos,
           x: pos.x * scaleFactor,
           y: pos.y * scaleFactor,
-          scale: pos.scale * (scaleFactor * 0.9 + 0.1), // Prevent scales from getting too small
+          scale: pos.scale * (scaleFactor * 0.9 + 0.1),
         };
       });
 
       setCardPositions(adjustedPositions);
     };
 
-    // Initial calculation
     handleResize();
-
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
     <div ref={containerRef} className="relative h-[450px] md:h-[600px] w-full ">
       {photos.map((photo, index) => {
-        // Get position data for this card
         const position = cardPositions[index % cardPositions.length];
 
         return (
@@ -113,7 +104,6 @@ export default function PhotoStack() {
             whileHover={{
               scale: position.scale * 1.05,
               rotate: position.rotate * 0.7,
-              //   zIndex: 50,
               transition: { duration: 0.2 },
             }}
             style={{

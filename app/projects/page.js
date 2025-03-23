@@ -10,7 +10,7 @@ export default function ProjectsPage() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1, // Controls the delay between each item
+        staggerChildren: 0.1,
       },
     },
   };

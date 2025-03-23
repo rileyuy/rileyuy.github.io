@@ -1,7 +1,8 @@
 import "../styles/globals.scss";
-import { Inter } from "next/font/google";
-import Navbar from "./components/Nav/Nav";
+import Head from "next/head";
 import { ThemeProvider } from "./components/ThemeProvider";
+
+import Navbar from "./components/Nav/Nav";
 
 export const metadata = {
   title: "Riley Uy - Portfolio",
@@ -16,6 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className="min-h-screen flex flex-col">
         <ThemeProvider
           attribute="class"

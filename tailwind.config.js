@@ -33,8 +33,8 @@ module.exports = {
         10: "10px",
       },
       boxShadow: {
-        brutal: "4px 4px 0px 0px rgba(0,0,0,1)", // Add this line if you want to reuse this shadow style
-        none: "0px 0px 0px 0px rgba(0,0,0,1)", // Add this line if you want to reuse this shadow style
+        brutal: "4px 4px 0px 0px rgba(0,0,0,1)",
+        none: "0px 0px 0px 0px rgba(0,0,0,1)",
       },
     },
   },
