@@ -49,10 +49,7 @@ export default function HeroSection() {
           whileHover="hover"
           animate="rest"
           onClick={() => {
-            window.open(
-              "https://drive.google.com/file/d/1AdC8lDubmTUA6k0TDcRxuKLJ7L2ecN2E/view?usp=sharing",
-              "_blank"
-            );
+            window.open("https://bit.ly/uy-cv", "_blank");
           }}
           className="relative flex items-center justify-center  w-48 h-14 rounded-xl bg-primary text-white font-bold text-lg overflow-hidden shadow-lg transition-all"
         >
